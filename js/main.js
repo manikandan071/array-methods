@@ -89,7 +89,10 @@ console.log(order);
 
 //filter method
 
-let ages=[22,17,19,33,25,13];
+let ages=[22,17,19,33,25,13,110];
+
+let odr=ages.sort();
+console.log(odr);
 
 function chechAdult(age){
     return age > 18;
@@ -98,4 +101,100 @@ function chechAdult(age){
 let adults=ages.filter(chechAdult);
 
 console.log(adults);
+
+
+//10/10/2022
+
+//unshift method
+
+ages.unshift(21,11);
+
+//add values at starting position and return array
+console.log(ages);
+
+//slice method
+
+let removeAge=ages.slice(1,4);
+
+//return selected values from the array
+console.log(removeAge);
+
+//forEach method
+
+let evenNum=[2,4,6,8];
+
+firstFun = (item,index) =>{
+    let multipleOf = index + ";" + item*2;
+    console.log(multipleOf);
+}
+
+evenNum.forEach(firstFun);
+
+//every method
+secFun = (age) =>{
+    return age > 10;
+}
+
+let check=evenNum.every(secFun);
+//return boolean
+console.log(check);
+
+//find method
+
+findOut = (spl) =>{
+    return 6 < spl;
+}
+
+let splNum=evenNum.find(findOut);
+
+//return the first passed value for the condition
+console.log(splNum);
+
+
+
+var inpnum=123;
+var add=0;
+while(0<inpnum){
+
+	let rem=inpnum%10;
+	add=rem+(add*10);
+	inpnum=Math.floor(inpnum/10);
+
+}
+console.log(add);
+
+while(0<add){
+	let rem2=add%10;
+	if(rem2==0){
+		console.log("zero");
+	}
+	else if(rem2==1){
+		console.log("one");
+	}
+	else if(rem2==2){
+		console.log("two");
+	}
+	else if(rem2==3){
+		console.log("three");
+	}
+	else if(rem2==4){
+		console.log("four");
+	}
+	else if(rem2==5){
+		console.log("five");
+	}
+	else if(rem2==6){
+		console.log("six");
+	}
+	else if(rem2==7){
+		console.log("seven");
+	}
+	else if(rem2==8){
+		console.log("eight");
+	}
+	else{
+		console.log("nine");
+	}
+	add=Math.floor(add/10);
+}
 
