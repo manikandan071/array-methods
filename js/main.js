@@ -197,4 +197,47 @@ while(0<add){
 	}
 	add=Math.floor(add/10);
 }
+//concat method
 
+let games=["cricket","carrom","football","chess"];
+let newGames=["handball","kabadi"];
+let indianGame=["hockey"];
+
+//concatenates one or more array return array 
+let allGames=indianGame.concat(newGames,games);
+
+console.log(allGames);
+
+//fill method
+
+let oneGame=games.fill("cricket");
+
+//fill one value in hole array index position
+console.log(oneGame);
+
+//reduce method
+
+let sum=[100,40,20];
+
+function  sumFun(total,values) {
+	return total - values;
+}
+
+//return single value the function accumulated result
+let result=sum.reduce(sumFun);
+	
+console.log(result);
+
+//join method
+
+let gamesList=newGames.join("&");
+
+console.log(gamesList);
+
+//reverse method
+
+let names=["mani","sakthi","arun","bala","thangaraj","karthik","jegan","naveen","jayaprakash"];
+let namesOrder=names.sort();
+
+//return alphabets in reverse order
+console.log(namesOrder.reverse());
