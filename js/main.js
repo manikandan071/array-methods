@@ -241,3 +241,43 @@ let namesOrder=names.sort();
 
 //return alphabets in reverse order
 console.log(namesOrder.reverse());
+
+
+//indexOf method
+
+let numbersLeters=["zero","one","two","three","four","five","four","three","two","one"];
+
+//return first index positions
+let idx=numbersLeters.indexOf("two");
+
+console.log(idx);
+
+//lastIndexOf method
+
+let lastidx=numbersLeters.lastIndexOf("two");
+
+//return last index positions
+console.log(lastidx);
+
+//keys method
+
+let total=numbersLeters.keys();
+
+//return all index position 
+for(let x of total){
+	console.log(x);
+}
+
+//includes method
+
+let find=numbersLeters.includes("five");
+
+//return boolean
+console.log(find);
+
+//otString method
+
+let x=[1,2,3,4];
+
+//return array of values
+console.log(x.toString());
